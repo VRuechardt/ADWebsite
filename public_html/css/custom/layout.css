@@ -1,0 +1,32 @@
+.code {
+  padding: 20px;
+  padding-left: 60px;
+  background-color: #333333;
+  color: white;
+  counter-reset: lineNumber;
+  font-family: 'Lucida Console'; }
+  .code .string {
+    color: #cf7f03; }
+  .code .condition {
+    color: #ff154f; }
+  .code .function {
+    color: #0099ff; }
+  .code .number {
+    color: #990099; }
+  .code .comment {
+    color: #ccc; }
+  .code div {
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    padding-left: 60px;
+    counter-increment: lineNumber;
+    position: relative; }
+  .code div::before {
+    content: counter(lineNumber);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    color: #ccc; }
+
+/*# sourceMappingURL=layout.css.map */

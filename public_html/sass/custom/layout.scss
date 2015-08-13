@@ -1,0 +1,49 @@
+
+.code {
+    
+    padding: 20px;
+    padding-left: 60px;
+    background-color: #333333;
+    color: white;
+    counter-reset: lineNumber;
+    font-family: 'Lucida Console';
+    
+    .string {
+        color: #cf7f03;
+    }
+    
+    .condition {
+        color: #ff154f;
+    }
+    
+    .function {
+        color: #0099ff;
+    }
+    
+    .number {
+        color: #990099;
+    }
+    
+    .comment {
+        color: #ccc;
+    }
+    
+    div {
+        width: 100%;
+        height: 20px;
+        margin: 0;
+        padding-left: 60px;
+        counter-increment: lineNumber;
+        position: relative;
+    }
+    
+    div::before {
+        content: counter(lineNumber);
+        position: absolute;
+        top: 0;
+        left: -40px;
+        color: #ccc;
+        
+    }
+    
+}
