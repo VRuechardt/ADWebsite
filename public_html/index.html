@@ -7,16 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="css/materialize.css" />
+        <link rel="stylesheet" href="css/highlight.min.css" />
         <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
         <script type="text/javascript" src="js/libs/materializecss/materialize.js"></script>
         <script type="text/javascript" src="js/libs/mustache.js/mustache.js"></script>
+        <script type="text/javascript" src="js/libs/highlight/highlight.min.js"></script>
         
     </head>
     <body>
         
         <header>
             
-            
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/sunset.jpg" alt="">
+                    <h1 class="white-text">Autonomous Drones</h1>
+                    <div class="dhl"></div>
+                    <div class="cdtm"></div>
+                </div>
+            </div>
             
         </header>
         <main>
@@ -32,7 +41,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;drone.<span class="function">takeoff</span>();
                 </div>
                 <div>
-                    &nbsp;&nbsp;} <span class="condition"> else {</span>
+                    &nbsp;&nbsp;} <span class="condition"> else</span> {
                 </div>
                 <div>
                     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -44,6 +53,29 @@
                     }
                 </div>
             </div>
+        
+            <pre>
+<code class="python">def detect_faces(frame, b):
+    global face
+    print "finding faces"
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    faces = faceCascade.detectMultiScale(
+        gray,
+        scaleFactor=1.1,
+        minNeighbors=5,
+        minSize=(60, 60)
+    )
+
+    # Draw a rectangle around the faces
+    if len(faces) > 0:
+        print "found face"
+        face = faces[0]
+
+drone = libardrone.ARDrone(1, 0)
+drone.set_camera_view(1)
+</code>
+            </pre>
             
         </main>
         <footer>
@@ -51,6 +83,13 @@
             
             
         </footer>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.parallax').parallax();
+            });
+            hljs.initHighlightingOnLoad();
+        </script>
         
     </body>
 </html>

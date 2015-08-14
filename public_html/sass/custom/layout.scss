@@ -47,3 +47,35 @@
     }
     
 }
+
+.parallax {
+    
+    h1 {
+        transform: translate3d(0px, 0px, 1px);
+        text-align: center;
+        margin-top: 200px;
+    }
+    
+    .cdtm {
+        background-image: url(../img/cdtm.png);
+        width: 135px;
+        height: 56px;
+        background-size: cover;
+        position: absolute;
+        top: 300px;
+        left: calc(50% + 10px);
+        transform: translate3d(0px, 0px, 1px);
+    }
+    
+    .dhl {
+        background-image: url(../img/dhl.png);
+        width: 396px;
+        height: 56px;
+        background-size: cover;
+        position: absolute;
+        top: 300px;
+        left: calc(50% - 406px);
+        transform: translate3d(0px, 0px, 1px);
+    }
+    
+}
