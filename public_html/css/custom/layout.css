@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; }
+
 .code {
   padding: 20px;
   padding-left: 60px;
@@ -51,5 +54,29 @@
   top: 300px;
   left: calc(50% - 406px);
   transform: translate3d(0px, 0px, 1px); }
+
+.fullscreen-video-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-height: 100vh;
+  z-index: -1; }
+  .fullscreen-video-container video {
+    min-width: 100vw;
+    min-height: 100%;
+    -webkit-filter: blur(1px) grayscale(1);
+    -moz-filter: blur(1px) grayscale(1);
+    filter: blur(1px) grayscale(1); }
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: blur(10px);
+  background-color: #655;
+  background-image: url(../img/splash1.JPG);
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=layout.css.map */

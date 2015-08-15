@@ -18,18 +18,18 @@
         
         <header>
             
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="img/sunset.jpg" alt="">
-                    <h1 class="white-text">Autonomous Drones</h1>
-                    <div class="dhl"></div>
-                    <div class="cdtm"></div>
-                </div>
-            </div>
-            
         </header>
         <main>
             
+            <div class="splash">
+                
+                <div class="start">
+                    
+                </div>
+                
+            </div>
+            
+            <!--
             <div class="code">
                 <div>
                     <span class="condition">while</span>(<span class="number">True</span>) {
@@ -75,7 +75,7 @@
 drone = libardrone.ARDrone(1, 0)
 drone.set_camera_view(1)
 </code>
-            </pre>
+            </pre>-->
             
         </main>
         <footer>
@@ -85,8 +85,8 @@ drone.set_camera_view(1)
         </footer>
         
         <script type="text/javascript">
-            $(document).ready(function() {
-                $('.parallax').parallax();
+            $(document).ready(function(){
+                $('.slider').slider({full_width: true});
             });
             hljs.initHighlightingOnLoad();
         </script>
