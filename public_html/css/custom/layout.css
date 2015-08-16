@@ -103,13 +103,12 @@ h1 {
   margin: -30px;
   width: calc(100vw + 60px);
   height: calc(60vh + 60px);
-  background-image: url(../img/splash1.png);
   background-size: cover;
   background-position: center; }
   .splash .takeoff {
     position: absolute;
     left: calc(50% - 250px);
-    top: 20%;
+    top: 10%;
     width: 500px;
     color: white;
     font-size: 64pt;
