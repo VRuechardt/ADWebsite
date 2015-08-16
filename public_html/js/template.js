@@ -27,9 +27,9 @@ $(document).ready(function(){
                 }
                 $("#container").html(html);
                 $('.slider').slider({full_width: true});
+                $('ul.tabs').tabs();
             }
         });
     });
     hljs.initHighlightingOnLoad();
-    $('ul.tabs').tabs();
 });
