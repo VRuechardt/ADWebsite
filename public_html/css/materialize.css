@@ -8287,10 +8287,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     filter: blur(10px);
     margin: -30px;
     width: calc(100vw + 60px);
-    height: calc(100vh + 60px); }
+    height: calc(60vh + 60px); }
   100% {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     margin: 0;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -8302,10 +8302,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     filter: blur(10px);
     margin: -30px;
     width: calc(100vw + 60px);
-    height: calc(100vh + 60px); }
+    height: calc(60vh + 60px); }
   100% {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     margin: 0;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -8317,10 +8317,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     filter: blur(10px);
     margin: -30px;
     width: calc(100vw + 60px);
-    height: calc(100vh + 60px); }
+    height: calc(60vh + 60px); }
   100% {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     margin: 0;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -8332,10 +8332,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     filter: blur(10px);
     margin: -30px;
     width: calc(100vw + 60px);
-    height: calc(100vh + 60px); }
+    height: calc(60vh + 60px); }
   100% {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     margin: 0;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -8381,7 +8381,7 @@ body {
   filter: blur(10px);
   margin: -30px;
   width: calc(100vw + 60px);
-  height: calc(100vh + 60px);
+  height: calc(60vh + 60px);
   background-image: url(../img/splash1.png);
   background-size: cover;
   background-position: center; }
@@ -8394,9 +8394,6 @@ body {
     font-size: 64pt;
     text-align: center;
     font-weight: bold;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    filter: blur(1px);
     cursor: pointer; }
   .splash .splash-footer {
     position: absolute;
@@ -8417,7 +8414,7 @@ body {
   -o-animation: slide-down 1s 1;
   animation: slide-down 1s 1;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   margin: 0;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
