@@ -31,4 +31,5 @@ $(document).ready(function(){
         });
     });
     hljs.initHighlightingOnLoad();
+    $('ul.tabs').tabs();
 });
