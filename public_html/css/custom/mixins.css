@@ -1,0 +1,62 @@
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    margin: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px); }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px); } }
+@-moz-keyframes slide-down {
+  0% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    margin: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px); }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px); } }
+@-o-keyframes slide-down {
+  0% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    margin: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px); }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px); } }
+@keyframes slide-down {
+  0% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    margin: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px); }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px); } }
+
+/*# sourceMappingURL=mixins.css.map */

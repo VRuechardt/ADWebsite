@@ -1,4 +1,13 @@
 
+@import "mixins.scss";
+
+$primary: "rgb(36,61,119)";
+
+body {
+    overflow-x: hidden;
+}
+
+
 .code {
     
     padding: 20px;
@@ -48,34 +57,68 @@
     
 }
 
-.parallax {
+
+.splash {
+    position: relative;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    margin: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
     
-    h1 {
-        transform: translate3d(0px, 0px, 1px);
-        text-align: center;
-        margin-top: 200px;
-    }
+    background-image: url(../img/splash1.png);
+    background-size: cover;
+    background-position: center;
+   
+   .takeoff {
+       
+       position: absolute;
+       left: calc(50% - 250px);
+       top: 20%;
+       width: 500px;
+       color: white;
+       font-size: 64pt;
+       text-align: center;
+       font-weight: bold;
+       -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        filter: blur(1px);
+        cursor: pointer;
+       
+   }
+   
+   .splash-footer {
+       position: absolute;
+       right: 10px;
+       bottom: 0;
+       color: white;
+       
+       img {
+           margin: 10px;
+           margin-bottom: 0;
+           vertical-align: top;
+       }
+       
+   }
     
-    .cdtm {
-        background-image: url(../img/cdtm.png);
-        width: 135px;
-        height: 56px;
-        background-size: cover;
-        position: absolute;
-        top: 300px;
-        left: calc(50% + 10px);
-        transform: translate3d(0px, 0px, 1px);
-    }
+}
+
+.splash-animated {
     
-    .dhl {
-        background-image: url(../img/dhl.png);
-        width: 396px;
-        height: 56px;
-        background-size: cover;
-        position: absolute;
-        top: 300px;
-        left: calc(50% - 406px);
-        transform: translate3d(0px, 0px, 1px);
-    }
+    @include animation('slide-down 1s 1');
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+    
+}
+
+.content-container {
+    
+    width: 100%;
+    
     
 }

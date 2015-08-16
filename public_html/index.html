@@ -18,18 +18,29 @@
         
         <header>
             
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="img/sunset.jpg" alt="">
-                    <h1 class="white-text">Autonomous Drones</h1>
-                    <div class="dhl"></div>
-                    <div class="cdtm"></div>
-                </div>
-            </div>
-            
         </header>
         <main>
             
+            <div class="splash" id="splash">
+                
+                <div class="takeoff" onclick="$('body').animate({scrollTop: $('#splash')[0].offsetHeight + 'px'}, 800);">
+                    Takeoff
+                </div>
+                
+                <div class="splash-footer">
+                    <img src="img/dhl.png" alt="DHL" style="margin-bottom: 5px;">
+                    <img src="img/cdtm.png" alt="CDTM">
+                </div>
+                
+            </div>
+            
+            <div class="content-container" id="container">
+                
+                
+                
+            </div>
+            
+            <!--
             <div class="code">
                 <div>
                     <span class="condition">while</span>(<span class="number">True</span>) {
@@ -75,7 +86,7 @@
 drone = libardrone.ARDrone(1, 0)
 drone.set_camera_view(1)
 </code>
-            </pre>
+            </pre>-->
             
         </main>
         <footer>
@@ -84,12 +95,7 @@ drone.set_camera_view(1)
             
         </footer>
         
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.parallax').parallax();
-            });
-            hljs.initHighlightingOnLoad();
-        </script>
+        <script type="text/javascript" src="js/template.js"></script>
         
     </body>
 </html>

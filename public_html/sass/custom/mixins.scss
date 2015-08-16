@@ -1,0 +1,52 @@
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@include keyframes(slide-down) {
+    0% {
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        filter: blur(10px);
+        margin: -30px;
+        width: calc(100vw + 60px);
+        height: calc(100vh + 60px);
+    }
+
+    100% {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
