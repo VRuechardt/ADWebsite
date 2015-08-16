@@ -26,6 +26,7 @@ $(document).ready(function(){
                     html += pageData[i];
                 }
                 $("#container").html(html);
+                $('.slider').slider({full_width: true});
             }
         });
     });
