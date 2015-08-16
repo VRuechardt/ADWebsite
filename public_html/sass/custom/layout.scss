@@ -110,7 +110,9 @@ h1 {
 .content-container {
     
     width: 100%;
-    
+    .row:nth-child(2n) {
+        background-color: #eee;
+    }
     
 }
 
@@ -138,4 +140,14 @@ h1 {
     float: left;
     margin-top: 31.5px;
     padding-left: 20px;
+}
+
+.image-container {
+    
+    height: 450px;
+    max-width: 700px;
+}
+
+.indicator-item.active {
+    background-color: $primary !important;
 }

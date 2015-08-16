@@ -128,6 +128,8 @@ h1 {
 
 .content-container {
   width: 100%; }
+  .content-container .row:nth-child(2n) {
+    background-color: #eee; }
 
 .splash-animated {
   -webkit-animation: slide-down 1s 1;
@@ -152,5 +154,12 @@ h1 {
   float: left;
   margin-top: 31.5px;
   padding-left: 20px; }
+
+.image-container {
+  height: 450px;
+  max-width: 700px; }
+
+.indicator-item.active {
+  background-color: #243d77 !important; }
 
 /*# sourceMappingURL=layout.css.map */
