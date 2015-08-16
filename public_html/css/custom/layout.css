@@ -126,6 +126,9 @@ body {
       margin-bottom: 0;
       vertical-align: top; }
 
+.content-container {
+  width: 100%; }
+
 .splash-animated {
   -webkit-animation: slide-down 1s 1;
   -moz-animation: slide-down 1s 1;
@@ -137,32 +140,5 @@ body {
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   filter: blur(0px); }
-
-.content-container {
-  width: 100%; }
-
-.fullscreen-video-container {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  max-height: 100vh;
-  z-index: -1; }
-  .fullscreen-video-container video {
-    min-width: 100vw;
-    min-height: 100%;
-    -webkit-filter: blur(1px) grayscale(1);
-    -moz-filter: blur(1px) grayscale(1);
-    filter: blur(1px) grayscale(1); }
-
-.splash {
-  width: 100vw;
-  height: 100vh;
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  filter: blur(10px);
-  background-color: #655;
-  background-image: url(../img/splash1.JPG);
-  background-size: cover;
-  background-position: center; }
 
 /*# sourceMappingURL=layout.css.map */
