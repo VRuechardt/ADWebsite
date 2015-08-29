@@ -5,7 +5,7 @@ $(document).ready(function(){
         $("#splash").addClass("splash-animated");
     }, 500);
     
-    var pages = ["sample", "overview", "gallery", "concepts", "ethics", "team", "footer"];
+    var pages = ["overview", "lectures", "concepts", "race", "team", "cdtm", "footer"];
     var pageData = [];
     $(pages).each(function(i, e) {
         var index = i;

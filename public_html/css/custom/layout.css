@@ -59,7 +59,9 @@
     -moz-filter: blur(0px);
     filter: blur(0px); } }
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  font-family: 'Lato', sans-serif;
+}
 
 h1 {
   font-size: 30pt !important; }
@@ -160,5 +162,16 @@ h1 {
 
 .indicator-item.active {
   background-color: #243d77 !important; }
+
+.background-video-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+  .background-video-container video {
+    width: 100%;
+    transform: translate(0%, -50%);
+     }
 
 /*# sourceMappingURL=layout.css.map */
