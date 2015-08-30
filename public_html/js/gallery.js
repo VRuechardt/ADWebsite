@@ -22,6 +22,9 @@ function gallery() {
         $("#floatingImage").animate({textIndent: 50}, {
             step: function (now, fx) {
                 $(this).css('-webkit-transform', "scale(" + ((now+50) / 50) + ")");
+                $(this).css('-moz-transform', "scale(" + ((now+50) / 50) + ")");
+                $(this).css('-op-transform', "scale(" + ((now+50) / 50) + ")");
+                $(this).css('transform', "scale(" + ((now+50) / 50) + ")");
                 $(this).css('margin-top', (-now) + "px");
             },
             duration: 'slow'
