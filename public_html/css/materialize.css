@@ -8481,6 +8481,7 @@ h1 {
   white-space: nowrap; }
   .horizontal-slider .img {
     width: 300px;
+    margin: 5px;
     display: inline-block; }
 
 /*# sourceMappingURL=materialize.css.map */

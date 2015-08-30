@@ -199,6 +199,7 @@ h1 {
   white-space: nowrap; }
   .horizontal-slider .img {
     width: 300px;
+    margin: 5px;
     display: inline-block; }
 
 /*# sourceMappingURL=layout.css.map */
