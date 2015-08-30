@@ -1065,7 +1065,7 @@ $(document).ready(function(){
           }
           if ((bottom > scrollTop) && (top < (scrollTop + windowHeight))) {
             $img.css('transform', "translate3D(-50%," + parallax + "px, 0)");
-            $headlines.css('transform', "translate3D(0," + (parallax) + "px, 0)");
+            $headlines.css('transform', "translate3D(0," + (parallax / 2) + "px, 0)");
           }
 
         }

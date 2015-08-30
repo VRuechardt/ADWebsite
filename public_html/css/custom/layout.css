@@ -169,9 +169,9 @@ h1 {
   margin-left: -350px;
   width: 700px;
   text-align: center;
-  transform: translate3d(0px, 345px, 0px);
-  -webkit-transform: translate3d(0px, 345px, 0px);
-  -moz-transform: translate3d(0px, 345px, 0px); }
+  transform: translate3d(0px, 172.5px, 0px);
+  -webkit-transform: translate3d(0px, 172.5px, 0px);
+  -moz-transform: translate3d(0px, 172.5px, 0px); }
   .parallax-headline span {
     font-size: 30pt;
     color: white;
