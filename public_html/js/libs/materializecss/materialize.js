@@ -1049,6 +1049,7 @@ $(document).ready(function(){
             container_height = ($this.height() > 0) ? $this.height() : 500;
           }
           var $img = $this.children("video").first();
+          var $headlines = $this.children("div");
           var img_height = $img.height();
           var parallax_dist = img_height - container_height;
           var bottom = $this.offset().top + container_height;
@@ -1064,6 +1065,7 @@ $(document).ready(function(){
           }
           if ((bottom > scrollTop) && (top < (scrollTop + windowHeight))) {
             $img.css('transform', "translate3D(-50%," + parallax + "px, 0)");
+            $headlines.css('transform', "translate3D(-50%," + (parallax / 2) + "px, 0)");
           }
 
         }
