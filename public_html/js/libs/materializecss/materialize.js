@@ -1043,12 +1043,12 @@ $(document).ready(function(){
         function updateParallax(initial) {
           var container_height;
           if (window_width < 601) {
-            container_height = ($this.height() > 0) ? $this.height() : $this.children("img").height();
+            container_height = ($this.height() > 0) ? $this.height() : $this.children("video").height();
           }
           else {
             container_height = ($this.height() > 0) ? $this.height() : 500;
           }
-          var $img = $this.children("img").first();
+          var $img = $this.children("video").first();
           var img_height = $img.height();
           var parallax_dist = img_height - container_height;
           var bottom = $this.offset().top + container_height;
@@ -1069,11 +1069,12 @@ $(document).ready(function(){
         }
 
         // Wait for image load
-        $this.children("img").one("load", function() {
+        $this.children("video").one("load", function() {
           updateParallax(true);
         }).each(function() {
           if(this.complete) $(this).load();
         });
+        updateParallax(true);
 
         $(window).scroll(function() {
           window_width = $(window).width();

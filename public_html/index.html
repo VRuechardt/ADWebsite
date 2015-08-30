@@ -22,13 +22,35 @@
     <body>
         
         <header>
-            
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper white">
+                        <div class="container">
+                            <a href="#" class="brand-logo" style="height: 100%;"><img src="img/CDTMLogo.png" alt="CDTM" style="height: 90%; padding-top: 5%;"></a>
+                            <a href="#" data-activates="mobile-nav" class="button-collapse black-text"><i class="mdi-navigation-menu"></i></a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="#lectures" class="black-text">Lectures</a></li>
+                                <li><a href="#concepts" class="black-text">Concepts</a></li>
+                                <li><a href="#race" class="black-text">The Race</a></li>
+                                <li><a href="#students" class="black-text">Students</a></li>
+                            </ul>
+                            <ul class="side-nav" id="mobile-nav">
+                                <li><a href="#lectures" class="black-text">Lectures</a></li>
+                                <li><a href="#concepts" class="black-text">Concepts</a></li>
+                                <li><a href="#race" class="black-text">The Race</a></li>
+                                <li><a href="#students" class="black-text">Students</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
 
-            <div class="background-video-container">
-                <div class="valign-wrapper">
-                    <video autoplay="autoplay" loop>
+            <div class="parallax-container" style="height: 700px;">
+                <div class="parallax">
+                    <video autoplay="autoplay" loop style="display: block;">
                         <source src="video/loop.mp4" type="video/mp4">
                         <source src="video/loop.ogv" type="video/ogg">
                         <source src="video/loop.webm" type="video/webm">

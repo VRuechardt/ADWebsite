@@ -2131,7 +2131,7 @@ video.responsive-video {
   right: 0;
   bottom: 0;
   z-index: -1; }
-  .parallax img {
+  .parallax video {
     display: none;
     position: absolute;
     left: 50%;
@@ -8450,8 +8450,8 @@ h1 {
   .background-video-container div video {
     width: 100vw;
     transform: scaleY(0.8);
-    -webkit-transform: scaleY(0.8);
-    -moz-transform: scaleY(0.8);
-    -op-transform: scaleY(0.8); }
+    -webkit-transform: scaleY(0.8) translateY(-10%);
+    -moz-transform: scaleY(0.8) translateY(-10%);
+    -op-transform: scaleY(0.8) translateY(-10%); }
 
 /*# sourceMappingURL=materialize.css.map */

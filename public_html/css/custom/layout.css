@@ -168,8 +168,8 @@ h1 {
   .background-video-container div video {
     width: 100vw;
     transform: scaleY(0.8);
-    -webkit-transform: scaleY(0.8);
-    -moz-transform: scaleY(0.8);
-    -op-transform: scaleY(0.8); }
+    -webkit-transform: scaleY(0.8) translateY(-10%);
+    -moz-transform: scaleY(0.8) translateY(-10%);
+    -op-transform: scaleY(0.8) translateY(-10%); }
 
 /*# sourceMappingURL=layout.css.map */
