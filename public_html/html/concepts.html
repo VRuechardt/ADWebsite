@@ -24,12 +24,15 @@
 		    <div id="concept1" class="col s12" style="background-color:#fff; margin-bottom:30px; margin-top:10px; text-align:left"> 
 
 		    	<p>
-		    		TODO
+                            Falco uses the camera pointing downwards to detect a red line below him. He then followes the line, which leads him directly through
+                            the three gates - slow, but steady.
 		    	</p>
 
 		    	<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Background </p>
 		    	<p style="margin-top:0px;">
-		    		TODO
+                            He does so by finding the angle the line points to using the Hough Lines algorithm. Whenever the line threatens to leave the viewport,
+                            the drone corrects the angle, moving towards the line. If exterior factors push Falco away, Falco elevates to find it again. Overall,
+                            he tries to maintain a rather low flying height. If something unexpected happens, he can be controlled using the keyboard.
 		    	</p>
 
 		    	<p>
@@ -45,12 +48,16 @@
 
 		    <div id="concept2" class="col s12" style="background-color:#fff; margin-bottom:30px; margin-top:10px; text-align:left">
 		    	<p>
-		    		This approach uses a Haar Cascade facetracker from OpenCV to track faces. The Drone will follow a certain face around as long as it does not move around too quickly. This should avoid jittering due to false detections substancially.
+		    		This approach uses a Haar Cascade facetracker from OpenCV to track faces. The Drone will follow a certain face around as long as
+                                it does not move around too quickly. This should avoid jittering due to false detections substancially.
 		    	</p>
 
 		    	<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Usage </p>
 		    	<p style="margin-top:0px;">
-		    		After startup you will see the front camera livestream in a window. Recognized faces are illustrated by rectangular boxes. The Drone follows the first recognized face as long as it's geometry doesn't change too rapidly. This avoids trouble with non consistent face detection on most occasions. Ignored faces are drawn in blue, the followed face is drawn in red and the green line indicates the drone movement.
+		    		After startup you will see the front camera livestream in a window. Recognized faces are illustrated by rectangular boxes.
+                                The Drone follows the first recognized face as long as it's geometry doesn't change too rapidly. This avoids trouble with non
+                                consistent face detection on most occasions. Ignored faces are drawn in blue, the followed face is drawn in red and the green
+                                line indicates the drone movement.
 		    	</p>
 
 		    	<p>
