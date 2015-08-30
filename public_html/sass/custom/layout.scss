@@ -156,10 +156,14 @@ h1 {
 .parallax-headline {
     position: absolute;
     left: 50%;
+    top: 0;
     margin-left: -350px;
     width: 700px;
     text-align: center;
-    bottom: calc(10% + 80px);
+  
+    transform: translate3d(0px, 345px, 0px);
+    -webkit-transform: translate3d(0px, 345px, 0px);
+    -moz-transform: translate3d(0px, 345px, 0px);
     
     span {
         font-size: 30pt;
@@ -169,5 +173,5 @@ h1 {
     
 }
 .parallax-headline:last-child {
-    bottom: 10%;
+    padding-top: 80px;
 }
