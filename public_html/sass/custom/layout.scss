@@ -151,3 +151,16 @@ h1 {
 .indicator-item.active {
     background-color: $primary !important;
 }
+
+
+.background-video-container div {
+    height: 50vh;
+    overflow: hidden;
+    video {
+        width: 100vw;
+        transform: scaleY(0.8);
+        -webkit-transform: scaleY(0.8);
+        -moz-transform: scaleY(0.8);
+        -op-transform: scaleY(0.8);
+    }
+}

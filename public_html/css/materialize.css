@@ -8444,4 +8444,14 @@ h1 {
 .indicator-item.active {
   background-color: #243d77 !important; }
 
+.background-video-container div {
+  height: 50vh;
+  overflow: hidden; }
+  .background-video-container div video {
+    width: 100vw;
+    transform: scaleY(0.8);
+    -webkit-transform: scaleY(0.8);
+    -moz-transform: scaleY(0.8);
+    -op-transform: scaleY(0.8); }
+
 /*# sourceMappingURL=materialize.css.map */
