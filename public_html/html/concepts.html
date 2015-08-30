@@ -15,17 +15,60 @@
 
        <div class="section" style="text-align:center">
 		      <ul class="tabs">
-		        <li class="tab col s2"><a class="active" href="#concept1">MyLittleDrony</a></li>
-		        <li class="tab col s2"><a href="#concept2">Concept 2</a></li>
-		        <li class="tab col s2"><a href="#concept3">Concept 3</a></li>
-		        <li class="tab col s2"><a href="#concept4">Concept 4</a></li>
-		        <li class="tab col s2"><a href="#concept5">Concept 5</a></li>
+		        <li class="tab col s3"><a class="active" href="#concept1">Falco</a></li>
+		        <li class="tab col s3"><a href="#concept2">FlyingFury</a></li>
+		        <li class="tab col s3"><a href="#concept3">MyLittleDrony</a></li>
+		        <li class="tab col s3"><a href="#concept4">RainBow_Dash</a></li>
 		      </ul>
 
 		    <div id="concept1" class="col s12" style="background-color:#fff; margin-bottom:30px; margin-top:10px; text-align:left"> 
 
 		    	<p>
+		    		TODO
+		    	</p>
+
+		    	<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Background </p>
+		    	<p style="margin-top:0px;">
+		    		TODO
+		    	</p>
+
+		    	<p>
+		    		<a href="https://github.com/CDTM/Autonomous-Drones/tree/master/Falco" style="font-weigth: bold; color:#61B45A; margin-bottom:20px; text-decoration: underline;">
+		    			<i style="margin-right:5px;" class="fa fa-github"></i>
+		    			Find source code on Github!
+		    		</a>
+		    	</p>
+
+		    </div>
+
+
+
+		    <div id="concept2" class="col s12" style="background-color:#fff; margin-bottom:30px; margin-top:10px; text-align:left">
+		    	<p>
+		    		This approach uses a Haar Cascade facetracker from OpenCV to track faces. The Drone will follow a certain face around as long as it does not move around too quickly. This should avoid jittering due to false detections substancially.
+		    	</p>
+
+		    	<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Usage </p>
+		    	<p style="margin-top:0px;">
+		    		After startup you will see the front camera livestream in a window. Recognized faces are illustrated by rectangular boxes. The Drone follows the first recognized face as long as it's geometry doesn't change too rapidly. This avoids trouble with non consistent face detection on most occasions. Ignored faces are drawn in blue, the followed face is drawn in red and the green line indicates the drone movement.
+		    	</p>
+
+		    	<p>
+		    		<a href="https://github.com/CDTM/Autonomous-Drones/tree/master/flyingfury" style="font-weigth: bold; color:#61B45A; margin-bottom:20px; text-decoration: underline;">
+		    			<i style="margin-right:5px;" class="fa fa-github"></i>
+		    			Find source code on Github!
+		    		</a>
+		    	</p>
+		    </div>
+
+		    <div id="concept3" class="col s12" style="background-color:#fff; margin-bottom:30px; margin-top:10px; text-align:left">
+		    	<p>
 		    		This approach uses two different detection stages. The Drone will first search for a circle in its field of view, using the HoughCircle detection algorithm from OpenCV. If a circle is found and remains roughly at the same spot for a given time, the tracking stage is initialized. For this, we use the CamShift algorithm: A rectangular region inside the circle is analyzed for its color or brightness distribution. From this point, the image is constantly scanned for the current best match to that first identifying distribution. The drone will then follow the tracking object, which could, for example, be a colored ball or a flashlight.
+		    	</p>
+
+				<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Usage </p>
+		    	<p style="margin-top:0px;">
+		    		After startup you will see the front camera livestream in a window. At first, the drone will wait for the activation of the autonomous flight mode. This mode can be triggered before or after taking off. By pressing 'x', the drone will start searching the livestream for circular shapes. By holding the trackable object into tho field of view for around 5 seconds, the drone will save the color distribution of the object. Now, the drone will continously scan the image for the object based on its color. If the object is moved away from the horizontal center of the image, the drone will rotate left or right to position the object in the center again. The size of the initial object bounding box is saved by the program. If the object is coming closer to the camera, the drone will fly backwards until the the object has the initial distance from the drone again. If the object is moved away, the drone will fly forward until the initial distance is reached.
 		    	</p>
 
 		    	<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Background </p>
@@ -33,14 +76,46 @@
 		    		The autonomous flight is based on the CamShift algorithm. This algorithm converts the image to a HSV color representation and then uses the hue values for the color-based tracking. It should be noted that varying lighting conditions will influence the robustness of the tracking. As an alternative approach, the brightness channel can be used instead of the hue channel. In this case, the drone can follow a very bright object, e.g. a flashlight. This approach is very robust in dark environments. In brighter environments, an opaque filter can be applied to the camera to increase the tracking robustness.
 		    	</p>
 
+		    	<p>
+		    		<a href="https://github.com/CDTM/Autonomous-Drones/tree/master/myLittleDrony" style="font-weigth: bold; color:#61B45A; margin-bottom:20px; text-decoration: underline;">
+		    			<i style="margin-right:5px;" class="fa fa-github"></i>
+		    			Find source code on Github!
+		    		</a>
+		    	</p>
 		    </div>
 
+		    <div id="concept4" class="col s12" style="background-color:#fff; margin-bottom:30px; margin-top:10px; text-align:left">
+		    	<p>
+		    		The approach chosen for Rainbow Dash, is rather simple, and its core, a track-and-follow approach. </br>
 
+					The overall goal of passing through three gates is rather daunting, if to be tackled by autonomously detecting all three gates, and determining a flight path based on visual odometry. Instead, a "director" can navigate the drone through the parcour by using a tracking object which the drone follows. </br>
 
-		    <div id="concept2" class="col s12">Test 2</div>
-		    <div id="concept3" class="col s12">Test 3</div>
-		    <div id="concept4" class="col s12">Test 4</div>
-		    <div id="concept5" class="col s12">Test 5</div>
+					For rainbow dash, a simple checkerboard has been used. Many other project use colored objects or similar artifacts, but this are inherently not very robust if the surrounding scene is complicated and contains similar objects. A structured tracking object, such as a marker (here the checkerboard), can allow for more robust tracking, easier estimate of distance (e.g., if the edge length of a square is known). However, this happens at a higher processing cost, as detecting a checkerboard can be rather complicated, even thought its a rather simple pattern. </br>
+
+					Based on the checkerboards centroid in the image frage of the drone's front camera, move commands are generated, and through the ps_drone library given to the drone and executed.
+		    	</p>
+
+				<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Usage </p>
+		    	<p style="margin-top:0px;">
+		    		The application is simply started via the commandline with no extra parameters. In order to run it, ps_drone library needs to be installed. Also opencv2 (with ffmpeg support) and python bindings needs to be available. Even if no on-screen visualization is used, the stream is processed via opencv2 at the moment. </br>
+
+					Basic keyboard instructions can be given to the drone in order to maniplute the flight path, if no checkerboard is given, or a crash is immediate. Should the connection be lost, the drone will automatically initiate the landing sequence. If this should not happen (as unlikely as it is), be aware of the situation and if possible catch the drone by hands and flip it over to trigger the safety-shut down!
+		    	</p>
+
+		    	<p style="font-weigth: bold; color:#61B45A; margin-bottom:0px"> Background </p>
+		    	<p style="margin-top:0px;">
+		    		The behavior is easily described. The drone uses its front camera to detect a checkerboard. The centroid of the checkerboard is known, and can easily be calculated from the detected corners. The drone will try to keep the centroid in the center of the image frame (through rotation and flying up and down). Based on the outer-most square (connecting the outermost corners), one can estimate a pseudo-distance (actual distance in cm is not required), and from this one can generate movements to draw the drone closer or push it away. </br>
+
+					In order to avoid (read: minimize) oscillation, a PID controller is used to improve the magnitude of the movement speeds. This is a very simple implementation, which does NOT account for delay in the system, inaccurate movement execution, or any other deterioating commands.
+		    	</p>
+
+		    	<p>
+		    		<a href="https://github.com/CDTM/Autonomous-Drones/tree/master/rainbow_dash" style="font-weigth: bold; color:#61B45A; margin-bottom:20px; text-decoration: underline;">
+		    			<i style="margin-right:5px;" class="fa fa-github"></i>
+		    			Find source code on Github!
+		    		</a>
+		    	</p>
+		    </div>
 		</div>
 
 
