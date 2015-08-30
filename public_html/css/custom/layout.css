@@ -175,7 +175,7 @@ h1 {
   .parallax-headline span {
     font-size: 30pt;
     color: white;
-    background-color: rgba(36, 60, 119, 0.4); }
+    background-color: rgba(36, 60, 119, 0.6); }
 
 .parallax-headline:last-child {
   padding-top: 80px; }
