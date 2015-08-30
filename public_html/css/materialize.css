@@ -8438,8 +8438,11 @@ h1 {
   padding-left: 20px; }
 
 .image-container {
-  height: 450px;
-  max-width: 700px; }
+  height: 600px; }
+  .image-container .slider {
+    height: 550px; }
+    .image-container .slider .slides {
+      height: 550px; }
 
 .indicator-item.active {
   background-color: #243d77 !important; }
@@ -8461,5 +8464,23 @@ h1 {
 
 .parallax-headline:last-child {
   padding-top: 80px; }
+
+.card-image {
+  height: 200px;
+  text-align: center;
+  background-color: black; }
+  .card-image img {
+    height: initial;
+    width: initial !important;
+    max-height: 100%;
+    max-width: 100% !important; }
+
+.horizontal-slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; }
+  .horizontal-slider .img {
+    width: 300px;
+    display: inline-block; }
 
 /*# sourceMappingURL=materialize.css.map */

@@ -144,8 +144,17 @@ h1 {
 
 .image-container {
     
-    height: 450px;
-    max-width: 700px;
+    height: 600px;
+    
+    .slider {
+        height: 550px;
+        
+        .slides {
+            height: 550px;
+        }
+        
+    }
+    
 }
 
 .indicator-item.active {
@@ -174,4 +183,32 @@ h1 {
 }
 .parallax-headline:last-child {
     padding-top: 80px;
+}
+
+.card-image {
+    
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    
+    img {
+        height: initial;
+        width: initial !important;
+        max-height: 100%;
+        max-width: 100% !important;
+    }
+    
+}
+
+.horizontal-slider {
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    .img {
+        width: 300px;
+        display: inline-block;
+    }
+    
 }
