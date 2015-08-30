@@ -153,14 +153,21 @@ h1 {
 }
 
 
-.background-video-container div {
-    height: 50vh;
-    overflow: hidden;
-    video {
-        width: 100vw;
-        transform: scaleY(0.8);
-        -webkit-transform: scaleY(0.8) translateY(-10%);
-        -moz-transform: scaleY(0.8) translateY(-10%);
-        -op-transform: scaleY(0.8) translateY(-10%);
+.parallax-headline {
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    text-align: center;
+    bottom: calc(10% + 80px);
+    
+    span {
+        font-size: 30pt;
+        color: white;
+        background-color: rgba(36, 60, 119, 0.4);
     }
+    
+}
+.parallax-headline:last-child {
+    bottom: 10%;
 }

@@ -1074,7 +1074,6 @@ $(document).ready(function(){
         }).each(function() {
           if(this.complete) $(this).load();
         });
-        updateParallax(true);
 
         $(window).scroll(function() {
           window_width = $(window).width();
