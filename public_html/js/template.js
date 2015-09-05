@@ -33,8 +33,10 @@ $(document).ready(function(){
                 gallery();
                 var swiper = new Swiper('.swiper-container', {
                     pagination: '.swiper-pagination',
-                    slidesPerView: 'auto',
                     paginationClickable: true,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    slidesPerView: 'auto',
                     spaceBetween: 30
                 });
             }
