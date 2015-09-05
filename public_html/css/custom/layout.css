@@ -205,7 +205,9 @@ h1 {
 
 nav {
   background-color: white;
-  height: 87px; }
+  height: 140px; }
+  nav .row {
+    padding: 14px 0 !important; }
 
 .swiper-container {
   height: 400px; }

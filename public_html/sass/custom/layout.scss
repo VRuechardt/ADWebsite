@@ -217,7 +217,12 @@ h1 {
 
 nav {
     background-color: rgb(255, 255, 255);
-    height: 87px;
+    height: 140px;
+    
+    .row {
+        padding: 14px 0 !important;
+    }
+    
 }
 
 
