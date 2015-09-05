@@ -31,9 +31,17 @@ $(document).ready(function(){
                 $('.slider').slider({full_width: true});
                 $('ul.tabs').tabs();
                 gallery();
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    slidesPerView: 'auto',
+                    paginationClickable: true,
+                    spaceBetween: 30
+                });
             }
         });
     });
     hljs.initHighlightingOnLoad();
+    
+    
     
 });
