@@ -8492,7 +8492,8 @@ nav {
     padding: 14px 0 !important; }
 
 .swiper-container {
-  height: 400px; }
+  height: 400px;
+  margin-bottom: 20px; }
 
 .swiper-slide {
   display: -webkit-box;
