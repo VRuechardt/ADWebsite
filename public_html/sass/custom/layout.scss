@@ -217,6 +217,7 @@ h1 {
 
 nav {
     background-color: rgb(255, 255, 255);
+    height: 87px;
 }
 
 
@@ -256,6 +257,17 @@ nav {
     
     h1 {
         margin-bottom: 0 !important;
+    }
+    
+}
+
+.nav-secondary {
+    
+    height: 30px;
+    background-color: white;
+    
+    li {
+        line-height: 28px !important;
     }
     
 }

@@ -204,7 +204,8 @@ h1 {
     display: inline-block; }
 
 nav {
-  background-color: white; }
+  background-color: white;
+  height: 87px; }
 
 .swiper-container {
   height: 400px; }
@@ -237,5 +238,11 @@ nav {
   padding-bottom: 0 !important; }
   .section h1 {
     margin-bottom: 0 !important; }
+
+.nav-secondary {
+  height: 30px;
+  background-color: white; }
+  .nav-secondary li {
+    line-height: 28px !important; }
 
 /*# sourceMappingURL=layout.css.map */
