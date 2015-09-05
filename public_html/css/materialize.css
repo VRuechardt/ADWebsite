@@ -8529,4 +8529,8 @@ nav {
   .nav-secondary li {
     line-height: 28px !important; }
 
+video.solution {
+  width: 30%;
+  margin-left: 10px; }
+
 /*# sourceMappingURL=materialize.css.map */
