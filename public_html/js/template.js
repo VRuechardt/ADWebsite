@@ -39,10 +39,20 @@ $(document).ready(function(){
                     slidesPerView: 'auto',
                     spaceBetween: 30
                 });
+                $('.scrollspy').scrollSpy();
             }
         });
     });
     hljs.initHighlightingOnLoad();
+    
+    $(window).scroll(function() {
+        if($(document).scrollTop() > 84) {
+            $(".nav-secondary").css({position: "fixed", top: 0, left: 0, right: 0});
+        } else {
+            $(".nav-secondary").css({position: "initial"});
+        }
+    });
+    
     
     
     

@@ -8525,10 +8525,18 @@ nav {
     margin-bottom: 0 !important; }
 
 .nav-secondary {
-  height: 30px;
-  background-color: white; }
+  height: 56px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  z-index: 100; }
   .nav-secondary li {
     line-height: 28px !important; }
+    .nav-secondary li .active {
+      background-color: #444;
+      color: white !important;
+      border-radius: 17px; }
 
 video.solution {
   width: 30%;
