@@ -31,11 +31,28 @@ $(document).ready(function(){
                 $('.slider').slider({full_width: true});
                 $('ul.tabs').tabs();
                 gallery();
-                var swiper = new Swiper('.swiper-container', {
-                    pagination: '.swiper-pagination',
+                var swiperLectures = new Swiper('.swiper-container-lectures', {
+                    pagination: '.swiper-pagination-lectures',
                     paginationClickable: true,
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
+                    nextButton: '.swiper-button-next-lectures',
+                    prevButton: '.swiper-button-prev-lectures',
+                    slidesPerView: 'auto',
+                    spaceBetween: 30
+                });
+                console.log(swiperLectures);
+                var swiperHackathon = new Swiper('.swiper-container-hackathon', {
+                    pagination: '.swiper-pagination-hackathon',
+                    paginationClickable: true,
+                    nextButton: '.swiper-button-next-hackathon',
+                    prevButton: '.swiper-button-prev-hackathon',
+                    slidesPerView: 'auto',
+                    spaceBetween: 30
+                });
+                var swiperRace = new Swiper('.swiper-container-race', {
+                    pagination: '.swiper-pagination-race',
+                    paginationClickable: true,
+                    nextButton: '.swiper-button-next-race',
+                    prevButton: '.swiper-button-prev-race',
                     slidesPerView: 'auto',
                     spaceBetween: 30
                 });
