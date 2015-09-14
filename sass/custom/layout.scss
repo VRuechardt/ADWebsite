@@ -309,7 +309,9 @@ video.solution {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
+    margin-bottom: 30px;
 }
+
 .video-wrapper iframe {
     position: absolute;
     top: 0;
