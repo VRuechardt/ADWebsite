@@ -35,6 +35,8 @@
                     
                     <video controls class="solution right" style="margin-bottom:15px;">
 	                    <source src="video/05%20Team%204.mp4" type="video/mp4">
+	                    <source src="video/05%20Team%204.ogg" type="video/ogg">
+	                    <source src="video/05%20Team%204.webm" type="video/webm">
 	                </video>
                             
                     Falco uses the camera pointing downwards to detect a red line below him. He then followes the line, which leads him directly through
@@ -65,6 +67,8 @@
 
 		    		<video controls class="solution right" style="margin-bottom:15px;">
 	                    <source src="video/05%20Team%202.mp4" type="video/mp4">
+	                    <source src="video/05%20Team%202.ogg" type="video/ogg">
+	                    <source src="video/05%20Team%202.webm" type="video/webm">
 	                </video>
 
 		    		This approach uses a Haar Cascade facetracker from OpenCV to track faces. The Drone will follow a certain face around as long as
@@ -92,6 +96,8 @@
 
 		    		<video controls class="solution right" style="margin-bottom:15px;">
 	                    <source src="video/05%20Team%203.mp4" type="video/mp4">
+	                    <source src="video/05%20Team%203.ogg" type="video/ogg">
+	                    <source src="video/05%20Team%203.webm" type="video/webm">
 	                </video>
 
 		    		This approach uses two different detection stages. The Drone will first search for a circle in its field of view, using the HoughCircle detection algorithm from OpenCV. If a circle is found and remains roughly at the same spot for a given time, the tracking stage is initialized. For this, we use the CamShift algorithm: A rectangular region inside the circle is analyzed for its color or brightness distribution. From this point, the image is constantly scanned for the current best match to that first identifying distribution. The drone will then follow the tracking object, which could, for example, be a colored ball or a flashlight.
@@ -120,6 +126,8 @@
 
 		    		<video controls class="solution right" style="margin-bottom:15px;">
                         <source src="video/05%20Team%201.mp4" type="video/mp4">
+                        <source src="video/05%20Team%201.ogg" type="video/ogg">
+                        <source src="video/05%20Team%201.webm" type="video/webm">
                     </video>
 
 		    		The approach chosen for Rainbow Dash, is rather simple, and its core, a track-and-follow approach. </br>
